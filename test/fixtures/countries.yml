@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  name: MyString
+  has_pokemon_at: 2016-07-06 14:35:42
+
+two:
+  code: MyString
+  name: MyString
+  has_pokemon_at: 2016-07-06 14:35:42

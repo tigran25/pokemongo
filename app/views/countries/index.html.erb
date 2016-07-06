@@ -1,0 +1,12 @@
+<table>
+<tr>
+  <th>country</th>
+  <th>pokemon go released?</th>
+</tr>
+<% Country.all.order(name: :asc).each do |country| %>
+  <tr>
+    <td><%= country.name %></td>
+    <td><%= country.has_pokemon_at? ? "<a href='https://itunes.apple.com/#{country.code.downcase}/app/pokemon-go/id1094591345?mt=8'>Go!</a>".html_safe : "-" %></td>
+  </tr>
+<% end %>
+</table>
